@@ -13,7 +13,7 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(List.of("https://abdelalicontact.netlify.app/contacts"));
+        config.setAllowedOrigins(List.of("https://abdelalicontact.netlify.app"));
         config.setAllowedHeaders(List.of("*"));  // This allows all headers
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));  // Allow specified methods
         source.registerCorsConfiguration("/**", config);
