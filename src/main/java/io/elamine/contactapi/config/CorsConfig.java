@@ -5,7 +5,6 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 import java.util.List;
-
 @Configuration
 public class CorsConfig {
 
@@ -14,10 +13,11 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.addAllowedOriginPattern("*");  // Accept all origins
-        config.setAllowedHeaders(List.of("*"));  // Accept all headers
+        config.setAllowedOrigins(List.of("https://abdelalicontact.netlify.app/contacts"));
+        config.setAllowedHeaders(List.of("*"));  // This allows all headers
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));  // Allow specified methods
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
     }
 }
+
