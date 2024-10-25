@@ -1,0 +1,7 @@
+io\elamine\contactapi\resource\ContactResource.class
+io\elamine\contactapi\Application.class
+io\elamine\contactapi\repo\ContactRepo.class
+io\elamine\contactapi\config\CorsConfig.class
+io\elamine\contactapi\service\ContactService.class
+io\elamine\contactapi\constant\Constant.class
+io\elamine\contactapi\domain\Contact.class
