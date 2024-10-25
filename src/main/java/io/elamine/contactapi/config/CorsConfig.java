@@ -24,13 +24,7 @@ import static org.springframework.http.HttpMethod.PATCH;
 import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.http.HttpMethod.PUT;
 
-/**
- * @author Junior RT
- * @version 1.0
- * @license Get Arrays, LLC (<a href="https://www.getarrays.io">Get Arrays, LLC</a>)
- * @email getarrayz@gmail.com
- * @since 11/23/2023
- */
+
 
 @Configuration
 public class CorsConfig {
@@ -41,7 +35,7 @@ public class CorsConfig {
             var urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
             var corsConfiguration = new CorsConfiguration();
             corsConfiguration.setAllowCredentials(true);
-            corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000","https://snazzy-kheer-a5081e.netlify.app", "http://localhost:3001", "http://localhost:4200"));  // Correct origins
+            corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000","https://abdelalicontact.netlify.app", "http://localhost:3001", "http://localhost:4200"));  // Correct origins
             corsConfiguration.setAllowedHeaders(List.of(ORIGIN, ACCESS_CONTROL_ALLOW_ORIGIN, CONTENT_TYPE, ACCEPT, AUTHORIZATION, X_REQUESTED_WITH, ACCESS_CONTROL_REQUEST_METHOD, ACCESS_CONTROL_REQUEST_HEADERS));
             corsConfiguration.setExposedHeaders(List.of(ORIGIN, ACCESS_CONTROL_ALLOW_ORIGIN, CONTENT_TYPE, ACCEPT, AUTHORIZATION));
             corsConfiguration.setAllowedMethods(List.of(GET.name(), POST.name(), PUT.name(), PATCH.name(), DELETE.name(), OPTIONS.name()));
