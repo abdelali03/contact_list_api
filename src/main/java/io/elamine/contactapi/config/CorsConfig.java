@@ -41,7 +41,8 @@ public class CorsConfig {
             var urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
             var corsConfiguration = new CorsConfiguration();
             corsConfiguration.setAllowCredentials(true);
-            corsConfiguration.setAllowedOrigins(List.of("https://abdelalicontact.netlify.app","http://localhost:3000","https://abdelali03.github.io/contact_list/"));  // Correct origins
+            corsConfiguration.setAllowedOrigins(List.of("https://abdelalicontact.netlify.app","http://localhost:3000",
+            "https://abdelali03.github.io"));  // Correct origins
             corsConfiguration.setAllowedHeaders(List.of(ORIGIN, ACCESS_CONTROL_ALLOW_ORIGIN, CONTENT_TYPE, ACCEPT, AUTHORIZATION, X_REQUESTED_WITH, ACCESS_CONTROL_REQUEST_METHOD, ACCESS_CONTROL_REQUEST_HEADERS));
             corsConfiguration.setExposedHeaders(List.of(ORIGIN, ACCESS_CONTROL_ALLOW_ORIGIN, CONTENT_TYPE, ACCEPT, AUTHORIZATION));
             corsConfiguration.setAllowedMethods(List.of(GET.name(), POST.name(), PUT.name(), PATCH.name(), DELETE.name(), OPTIONS.name()));
